@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pac-Man test</title>
+<style>
+	#top-jaw{
+animation: eatingtop .1s alternate linear infinite;
+transform-origin:23.01% 46.88%;		
+	}	
+	@keyframes eatingtop{
+		0%{transform: rotate(-20deg);}		
+		100%{transform: rotate(0deg);}		
+	}	
+	#bottom-jaw{
+animation: 	eatingbottom .1s alternate linear infinite;
+transform-origin:23.01% 46.88%;	
+	}
+		@keyframes eatingbottom{
+		0%{transform: rotate(20deg);}		
+		100%{transform: rotate(0deg);}		
+	}	
+	#Super-Pac-Man{
+animation: moveright 7s linear infinite;		
+	}	
+	@keyframes moveright{
+		0%{transform: translate(-8300px)}
+		100%{transform: translate(1350px)}	
+	}
+	</style>	
+<style type="text/css">
+body {
+    background-color: rgba(21,20,24,1.00);
+    margin: 0;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+	text-decoration-color: #FFFFFF
+}
+p1	{
+    color: white;
+    font-family: verdana;
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+	}
+#Blinky {
+	animation: chasing 6s linear infinite
+}
+	@keyframes chasing{
+		0%	{transform: translate(2500px);}
+		100%{transform: translate(-1650px);}	
+
+		}
+#Pac-Man 	
+{
+	animation: fleeing 5s linear infinite
+}
+	@keyframes fleeing{
+		0%	{transform: translate(2500px);}
+		100%{transform: translate(-1650px);}	
+	}
+#small-top-jaw
+	{
+	animation: small-openup .1s alternate linear infinite;
+	transform-origin: 87.85% 64.1%;	
+	}
+	@keyframes small-openup {
+	0% {transform: rotate(20deg);}
+	100% {transform: rotate(0deg);}
+	}
+#small-bottom-jaw
+	{
+	animation: small-opendown .1s alternate infinite linear;
+	transform-origin:  87.85% 64.1%;	
+	}
+	@keyframes small-opendown {
+	0% {transform: rotate(-20deg);}
+	100% {transform: rotate(0deg);}
+	}	
+#Turn-to-blue
+	{
+		animation: flee-from-pac 7s linear infinite
+	}
+	@keyframes flee-from-pac{
+		0% {transform: translate(-8000px);}
+		100% {transform: translate(1350px);}
+	}
+</style>
+</head>
+
+<body>
+<main>
+	
+<audio src="03 Outward BGM.mp3" display:none; autoplay>
+</audio>	
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 768">
+  <g id="Background">
+    <rect width="1366" height="768" fill="#6fccdd"/>
+  </g>
+  <g id="Blinky-whole">
+    <g id="Blinky">
+      <path id="blinky1" d="M1076.11,484.78v111.55l-31.85-36.03-1.98-2.24-15.73,14.06-27.1,24.22-2.15,1.98-2.15-1.98-27.11-24.22-15.73-14.06-1.98,2.24-31.85,36.03v-111.55c0-51.93,35.29-94.02,78.82-94.02s78.82,42.1,78.82,94.02Z" fill="#e9233b" stroke="#000" stroke-miterlimit="10" stroke-width="2.79"/>
+      <circle cx="973.58" cy="465.22" r="23.71" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="2.28"/>
+      <circle cx="959.51" cy="465.22" r="8.35" stroke="#000" stroke-miterlimit="10" stroke-width="2.28"/>
+      <circle cx="1022.76" cy="465.22" r="23.71" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="2.28"/>
+      <circle cx="1008.68" cy="465.22" r="8.35" stroke="#000" stroke-miterlimit="10" stroke-width="2.28"/>
+      <path id="blinky-shine" d="M938.52,438.13c-1.06-.57,1.58-13.27,11.69-22.54,9.36-8.59,23.7-12.91,26.71-9.18,1.84,2.27-.16,8.02-3.76,10.85-4.48,3.52-8.97.61-15.44,2.09-12.81,2.91-17.96,19.45-19.2,18.78Z" fill="#ef5996"/>
+      <path id="blinky-shade1" d="M952.75,524.32c-.94-.13-1.31,5.85-4.54,13.04-4.92,10.98-11.7,14.16-10.49,20.7.15.79.63,3.44,2.27,3.97,3.5,1.13,7.93-8.87,13.04-7.94,2.55.47,3.41,3.31,5.39,2.84,1.55-.37,2.79-2.54,2.84-4.54.09-3.92-4.47-4.51-6.52-9.92-.43-1.13-.25-1.15-.85-9.36-.59-8.04-.82-8.75-1.13-8.79Z" fill="#d22027"/>
+      <path id="blinky-shade2" d="M1028.05,524.31c1.31-.55,5.42,6.65,5.67,7.09,3.58,6.32,9.25,16.33,5.39,23.53-.98,1.83-1.27,1.03-5.95,5.67-7.38,7.3-8.58,11.16-11.06,10.77-2.49-.39-4.5-4.78-3.97-8.22.4-2.58,2.01-3.24,4.25-6.52,2.58-3.77,3.41-7.21,4.54-11.91.59-2.46,1.64-6.95,1.42-12.76-.18-4.64-1.05-7.34-.28-7.66Z" fill="#d22027"/>
+      <path id="blinky-shade3" d="M1071.71,578.47c.98-.18,1.1-3.76,1.13-7.06.22-21.63-3.16-32.05-2.27-48.51.22-4.06.43-3.57,1.13-12.76.56-7.41,1.13-14.81,1.13-21.83,0-12.64-1.8-22.59-2.55-26.37-2.92-14.58-9.33-32.87-13.04-32.32-1.52.22-2.5,3.59-2.55,5.95-.09,4.25,2.78,7.48,3.4,8.22,7.19,8.55,9.09,35.05,9.07,46.78-.04,20.84-6.18,19.33-6.24,43.38,0,2.31.06,15.01,4.54,30.34.39,1.35,4.29,14.54,6.24,14.18Z" fill="#d22027"/>
+    </g>
+  </g>
+  <g id="Turn-to-blue">
+    <g>
+      <path id="blinky-body" d="M761.09,487.91v111.55l-31.85-36.03-1.98-2.24-15.73,14.06-27.1,24.22-2.15,1.98-2.15-1.98-27.11-24.22-15.73-14.06-1.98,2.24-31.85,36.03v-111.55c0-51.93,35.29-94.02,78.82-94.02s78.82,42.1,78.82,94.02Z" fill="#324da1" stroke="#000" stroke-miterlimit="10" stroke-width="2.79"/>
+      <circle cx="707.74" cy="468.35" r="23.71" fill="#ddbab1"/>
+      <path id="blinky-shine-2" data-name="blinky-shine" d="M623.5,441.26c-1.06-.57,1.58-13.27,11.69-22.54,9.36-8.59,23.7-12.91,26.71-9.18,1.84,2.27-.16,8.02-3.76,10.85-4.48,3.52-8.97.61-15.44,2.09-12.81,2.91-17.96,19.45-19.2,18.78Z" fill="#767cbc"/>
+      <path id="blinky-shade1-2" data-name="blinky-shade1" d="M637.72,527.45c-.94-.13-1.31,5.85-4.54,13.04-4.92,10.98-11.7,14.16-10.49,20.7.15.79.63,3.44,2.27,3.97,3.5,1.13,7.93-8.87,13.04-7.94,2.55.47,3.41,3.31,5.39,2.84,1.55-.37,2.79-2.54,2.84-4.54.09-3.92-4.47-4.51-6.52-9.92-.43-1.13-.25-1.15-.85-9.36-.59-8.04-.82-8.75-1.13-8.79Z" fill="#293689"/>
+      <path id="blinky-shade2-2" data-name="blinky-shade2" d="M713.02,527.44c1.31-.55,5.42,6.65,5.67,7.09,3.58,6.32,9.25,16.33,5.39,23.53-.98,1.83-1.27,1.03-5.95,5.67-7.38,7.3-8.58,11.16-11.06,10.77-2.49-.39-4.5-4.78-3.97-8.22.4-2.58,2.01-3.24,4.25-6.52,2.58-3.77,3.41-7.21,4.54-11.91.59-2.46,1.64-6.95,1.42-12.76-.18-4.64-1.05-7.34-.28-7.66Z" fill="#293689"/>
+      <path id="blinky-shade3-2" data-name="blinky-shade3" d="M756.69,581.6c.98-.18,1.1-3.76,1.13-7.06.22-21.63-3.16-32.05-2.27-48.51.22-4.06.43-3.57,1.13-12.76.56-7.41,1.13-14.81,1.13-21.83,0-12.64-1.8-22.59-2.55-26.37-2.92-14.58-9.33-32.87-13.04-32.32-1.52.22-2.5,3.59-2.55,5.95-.09,4.25,2.78,7.48,3.4,8.22,7.19,8.55,9.09,35.05,9.07,46.78-.04,20.84-6.18,19.33-6.24,43.38,0,2.31.06,15.01,4.54,30.34.39,1.35,4.29,14.54,6.24,14.18Z" fill="#293689"/>
+      <circle cx="650.6" cy="468.35" r="16.2" fill="#ddbab1"/>
+      <polyline points="616.59 519.01 631.05 507.17 644.09 519.01 659.97 507.17 673.86 519.01 691.44 507.17 703.02 519.01 723.48 507.17 736.24 520.71" fill="none" stroke="#ddbab1" stroke-miterlimit="10" stroke-width="4.04"/>
+    </g>
+  </g>
+  <g id="Pac-Man">
+    <path id="head-small" d="M1311.03,494.54c0-60.5-49.05-109.55-109.55-109.55v219.09c60.5,0,109.55-49.05,109.55-109.55Z" fill="#ffe600"/>
+    <path id="small-top-jaw" d="M1091.94,494.54c0-60.5,49.05-109.55,109.55-109.55v109.55c-60.5,0-109.55,0-109.55,0Z" fill="#ffe600"/>
+    <path id="small-bottom-jaw" d="M1091.94,494.54c0,60.5,49.05,109.55,109.55,109.55v-109.55c-60.5,0-109.55,0-109.55,0Z" fill="#ffe600"/>
+    <path id="small-shine-bottom" d="M1287.76,544.61c-1.29-2.11-5.54-1.63-5.94-1.58-10.78,1.32-10.53,17.86-24.95,29.7-11.09,9.11-23.73,9.58-23.36,11.09.3,1.25,8.95,1.22,17.42-1.58,11.15-3.69,17.56-10.73,26.53-20.59,5.28-5.8,12.39-13.62,10.3-17.03Z" fill="#c5a02e"/>
+    <circle id="small-eye" cx="1201.48" cy="442.91" r="10.73"/>
+  </g>
+  <g id="Super-Pac-Man">
+    <path id="head-super" d="M48.33,361.18c0-147.3,119.41-266.71,266.71-266.71v533.42c-147.3,0-266.71-119.41-266.71-266.71Z" fill="#ffe600"/>
+    <path id="top-jaw" d="M581.75,361.18c0-147.3-119.41-266.71-266.71-266.71v266.71h266.71Z" fill="#ffe600"/>
+    <path id="bottom-jaw" d="M581.75,361.18c0,147.3-119.41,266.71-266.71,266.71v-266.71h266.71Z" fill="#ffe600"/>
+    <path id="super-shine-bottom" d="M104.99,483.08c3.15-5.13,13.5-3.97,14.46-3.86,26.25,3.21,25.64,43.48,60.74,72.31,27,22.17,57.77,23.31,56.88,27-.73,3.03-21.79,2.97-42.42-3.86-27.16-8.99-42.76-26.13-64.6-50.13-12.86-14.13-30.17-33.15-25.07-41.46Z" fill="#c5a02e"/>
+    <circle id="super-eye" cx="315.04" cy="235.48" r="26.13"/>
+  </g>
+</svg>
+</main>
+<footer>  <p1>&copy; 2024, Said Fayad. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p1></footer>	
+</body>
+</html>
