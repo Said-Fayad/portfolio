@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SpongeBob Fusion</title>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>	
+<style type="text/css">
+@font-face {
+    font-family: 'some_time_laterregular';
+    src: url('some_time_later-webfont.woff2') format('woff2'),
+         url('some_time_later-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}	
+body {
+    margin: 0;
+    font-family: 'some_time_laterregular';
+	background-image: url("treedome.png");
+    background-position: center center;
+    background-size: cover;
+}
+wrapper {
+    width: 1200px;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.50);
+    height: 930px;
+}
+#drop1 {
+    background-image: url(Squidward_stock_art.png);
+}
+#drop2 #patbob {
+    visibility: visible;
+}
+#drop3 #krabob {
+    visibility: visible;
+}
+#drop1 #squidbob {
+    visibility: visible;
+}
+#drop2 {
+    background-image: url(Patrick_stock_art.png);
+}
+#drop3 {
+    background-image: url(Krabs_artwork.png);
+}
+#drop4 {
+    background-image: url(Peashooter.png);
+}	
+#drop4 #peabobsquareshooter {
+    visibility: visible;
+}
+#drop5 {
+	background-image: url(Plankton_stock_art.png);
+}
+#drop5 #plankbob {
+	visibility: visible;
+}
+#drag1 {
+    background-image: url(SpongeBob_stock_art.png);
+    border: 10px solid rgba(83,83,83,1.00);
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+#drag1 img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+#krabob , #patbob, #squidbob, #peabobsquareshooter, #plankbob{
+    visibility: hidden;
+}
+section {
+    width: 370px;
+    height: 370px;
+    margin: 10px;
+    border: thin solid black;
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+    vertical-align: top;
+}
+section div {
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
+}
+div {
+    width: 370px;
+    height: 370px;
+    margin: 10px auto;
+    border: thin solid black;
+    background-size: cover;
+    background-position: center center;
+}
+h1 {
+    position: static;
+    padding-left: 35%;
+}
+</style>
+</head>
+
+	
+<body>
+<wrapper>
+<h1>Sandy's Fusion Machine</h1>
+<section id="drop0" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <div id="drag1" draggable="true" ondragstart="drag(event)"><img src="PatBob.jpg" alt="" width="813" height="868" id="patbob"><img src="Squidbob.jpg" alt="" width="368" height="368" id="squidbob"><img src="KrabBob.jpg" alt="" width="1080" height="1080" id="krabob"><img src="Peabob_Squareshooter.png" alt="" width="140" height="140" id="peabobsquareshooter"><img src="Plankbob.png" alt="" width="1422" height="1080" id="plankbob"></div>
+</section>
+  <section id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
+  <section id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
+  <section id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
+  <section id="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
+  <section id="drop5" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
+<footer><p>© 2024, Said Fayad. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>	
+</wrapper>
+</body>
+</html>
