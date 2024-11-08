@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hot Topic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">	
+<style type="text/css">
+body {
+	margin: 0;
+}
+	header {
+    background-color: #000000;
+    height: 30px;
+    color: #FFFFFF;
+    padding: 16px;
+	}	
+wrapper {
+    width: 1366px;
+    display: block;
+    margin: auto;
+    min-height: 1024px;
+    padding: auto;
+}
+	section{
+    width: 500px;
+    height: 500px;
+    vertical-align: top;
+    display: inline-block;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0px;
+}
+ul li {
+    padding: 8px 16px;
+    display: inline-block;
+    color: #FFFFFF;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #000000;
+    margin-left: 0px;
+    position: relative;
+}
+main ul li {
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 0px;
+    margin-left: 407px;
+}	
+.photos	
+{
+    position: relative;
+}
+.photos img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+button {
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+	border: thick solid #FFFFFF;
+		margin: 20px;
+}
+	button:hover {
+    border-color: #B10032;
+	}
+.bluebtn {
+	background-color: #4b40ff;
+}
+.redbtn {
+	background-color: #ff3535;
+}
+.greenbtn {
+	background-color: #64d666;
+}
+.smallbtn {
+	border-radius: 5px;
+    width: 30px;
+    height: 30px;
+	border: thick solid #FFFFFF;
+}
+.addtobag {
+    border-radius: 5px;
+    background-color: #A20002;
+    width: 152px;
+	color: #FFFFFF;
+}	
+nav {
+    background-color: black;
+    width: auto;
+    text-align: center;
+}
+h1 img {
+    margin-left: 0px;
+}
+h2 {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+}
+nav div {
+background-color: white
+}
+.description p {
+}
+.redtext {
+	color: #FF0004
+}
+.search {
+    border: none;
+    width: 500px;
+    margin-right: 1250px;
+	}
+.logo {
+    position: relative;
+    left: 8px;
+    top: -23px;
+}
+.textonbanner {
+    position: relative;
+    left: 804px;
+    top: -85px;
+}
+.textonbanner2 {
+    position: relative;
+    left: 804px;
+    top: -85px;
+}
+.textonbanner3 {
+    position: relative;
+    left: 1571px;
+    top: -85px;
+}
+.wishlist {
+	border: medium;
+	border-color: #000000;
+	border-radius: 5px;
+	border-style: solid;
+	width: 209px;
+}	
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('redback.jpg','blueback.png','greenback.png')">
+<header>
+  <ul>
+    <h1 class="logo"><img src="hottopic_logo_white.png" width="125" height="20" alt="logo"/></h1>
+    <h2 class="textonbanner">20% sitewide*</h2>
+    <h2><u class="textonbanner2">Shop Now</u></h2>
+    <h2><u class="textonbanner3">Sign In</u></h2>
+  </ul>
+</header>
+<nav>
+  <div>
+    <h2>
+      <input type="search" class="search" placeholder="Search all products...">
+    </h2>
+  </div>
+  <ul>
+    <a href="#popculture"><li>Pop Culture</li></a>
+	<a href="#new"><li>New</li></a>
+	<a href="#girls"><li>Girls</li></a>
+	<a href="#plus"><li>Plus</li></a>
+	<a href="#guys"><li>Guys</li></a>
+	<a href="#swim"><li>Swim</li></a>
+	<a href="#tees"><li>Tees</li></a>
+	<a href="#backpacksnbags"><li>Backpacks &#38; Bags</li></a>
+	<a href="#accessories"><li>Accessories</li></a>
+	<a href="#home"><li>Home</li></a>
+	<a href="#bandmerch"><li>Band Merch</li></a>
+	<a href="#kids"><li>Kids</li></a>
+	<a href="#toysncollectibles"><li>Toys &#38; Collectibles</li></a>
+	<a href="#sale">
+	<li>Sale</li></a>
+	<a href="#htreplay">
+	<li>HT Replay</li></a>
+  </ul>
+</nav>
+<wrapper>
+<section class="photos">	
+	<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('redshirt','','redback.jpg',1)"><img src="redfront.png" alt="Red t shirt
+" width="380" height="460" id="redshirt"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('blueshirt','','blueback.png',1)"><img src="bluefront.png" alt="" width="380" height="460" id="blueshirt"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('greenshirt','','greenback.png',1)"><img src="greenfront.png" alt="" width="380" height="460" id="greenshirt"></a>
+</section>
+	<section class="description">
+	  <h2>Dragon Ball Z Goku Tee</h2>
+	  <p class="redtext"><b>$24.90</b></p>
+	<h1>&#9733;&#9733;&#9733;&#9733;&#9733;</h1>	
+	<p>Size: Choose Size</p>
+	<button type="smallbtn">SM</button>
+	<button type="smallbtn">MD</button>
+	<button type="smallbtn">LG</button>
+	<button type="smallbtn">XL</button>	
+  <label for="qty">Qty:</label>
+  <select name="qty" id="qty">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+	<p>Ship It</p>
+	<p>Select Styles For Availability</p>	
+	  <button class="redbtn" onClick="MM_showHideLayers('redshirt','','show','blueshirt','','hide','greenshirt','','hide')"></button>
+	  <button class="bluebtn" onClick="MM_showHideLayers('redshirt','','hide','blueshirt','','show','greenshirt','','hide')"></button>
+	  <button class="greenbtn" onClick="MM_showHideLayers('redshirt','','hide','blueshirt','','hide','greenshirt','','show')"></button>
+    </section>
+	<h1 class="addtobag">Add to bag</h1>
+	<h1 class="wishlist">Add to wishlist</h1>
+	<footer><p>© 2024, Said Fayad. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+</wrapper>	
+</body>
+</html>
