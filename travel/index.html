@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Global World Travel</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<style type="text/css">
+body {
+    margin: 0;
+    background-image: url(backpacker.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+}
+header {
+    background-color: #FFC615;
+}
+h1 {
+    padding: 20px;
+    margin: 0;
+    font-family: "Lobster", sans-serif;
+    font-size: 40px;
+}
+wrapper {
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    width: 1366px;
+    background-color: rgba(255,255,255,0.50);
+    padding: 20px;
+}
+#Tabs1 ul li a img {
+    height: 50px;
+    width: auto;
+}
+#Tabs1 ul li {
+    background-color: rgba(0,0,0,0.30);
+}
+#Tabs1 ul {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    text-align: center;	
+}
+#Tabs1 {
+    border: none;
+    background-image: none;
+}
+#Tabs1 div {
+    background-color: rgba(255,255,255,0.50);
+}
+#Tabs1 div input , #Tabs1 div select{
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+#Tabs1 div .search {
+    background-color: #FFC615;
+    color: #FFFFFF;
+}
+footer {
+    color: #923088;
+    padding: 16px;
+    margin-top: 490px;
+    font-weight: bolder;
+    background-color: rgba(255,255,255,0.55);
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="assets/jquery.js" type="text/javascript"></script>	
+</head>
+
+<body>
+<header>
+<h1>Global World Travel</h1>
+</header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1"><img src="plane.png" width="600" height="344" alt=""/><br>
+Flights</a></li>
+      <li><a href="#tabs-2"><img src="hotel.png" width="396" height="514" alt=""/><br>
+Hotels</a></li>
+      <li><a href="#tabs-3"><img src="car.png" width="600" height="340" alt=""/><br>
+Cars</a></li>
+      <li><a href="#tabs-4"><img src="cruises.png" width="379" height="520" alt=""/><br>
+Cruises</a></li>
+      <li><a href="#tabs-5"><img src="list.png" width="489" height="546" alt=""/><br>
+Things To Do</a></li>
+    </ul>
+    <div id="tabs-1">
+      <p><input type="text" placeholder="Leaving From"><input type="text" placeholder="Going To"><input name="Number of Travelers" type="date" id="Number of Travelers">
+		  <select>
+        <option value="0" selected="selected">Number of Travelers</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5+">5+</option>
+      </select>
+	<input type="submit" class="search" value="Search">
+	<input type="text" placeholder="Special Accomodations">	  
+      </p>
+    </div>
+    <div id="tabs-2">
+      <p><input type="text" placeholder="Select Your Room"><input type="date" id="hotel date">
+		  <select>
+        <option value="0" selected="selected">Number of Guests</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5+">5+</option>
+		<input type="submit" class="search" value="Search">	  
+      </select>
+		</p>
+    </div>
+    <div id="tabs-3">
+      <p><select>
+        <option value="0" selected="selected">Number of Travelers</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5+">5+</option> 
+      </select>
+	<select>
+        <option value="0" selected="selected">Number of Car Seats</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5+">5+</option>
+      </select>
+		<input type="date" id="pick up date">
+		<input type="text" placeholder="Pick-Up Location">
+		<input type="text" placeholder="Drop-Up Location">
+		<input type="submit" class="search" value="Search">  
+		</p>
+    </div>
+    <div id="tabs-4">
+      <p><input type="text" placeholder="Select Your Cabin">
+		  <input type="date" id="cruise date">
+	<select>
+        <option value="0" selected="selected">Number of Travelers</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5+">5+</option>
+		<input type="submit" class="search" value="Search">
+      </select>	
+	<input type="text" placeholder="Special Accomodations">	  
+      </p>
+    </div>
+    <div id="tabs-5">
+      <p><input type="text" placeholder="Activities">
+		<input type="text" placeholder="Museums">
+		<input type="date" id="miscellaneous date">
+		<input type="text" placeholder="Other Options">
+		<input type="submit" class="search" value="Search">  
+		</p>
+    </div>
+  </div>
+</wrapper>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+}); </script>
+<footer><p>©2024, Said Fayad. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+<script src="https://said-joesph-fayad-broward.on.drv.tw/gra1144pcP7SaidFayad2024/"></script>	
+</body>	
+</html>
